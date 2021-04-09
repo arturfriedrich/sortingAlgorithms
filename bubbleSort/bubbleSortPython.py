@@ -3,9 +3,10 @@ def bubble_sort(list):
         for j in range(len(a) - 1):
             if a[j] > a[j + 1]:
                 a[j], a[j + 1] = a[j + 1], a[j]
+                print(f"{i}. and {j}. number switched:", a)
     return list
 
 
-a = [2, 9, 3, 5, 1, 7, 4]
+a = [8, 9, 3, 5, 1]
 print("Original list:", a)
 print("Bubble sorted list:", bubble_sort(a))
